@@ -1,0 +1,40 @@
+/* Ensure the body and html take up the full height of the viewport */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Canvas styling */
+#myCanvas {
+	width: 100vw;
+	height: 100vh;
+	display: block; /* Ensures canvas covers the full viewport */
+}
+
+/* Fixed position container for buttons */
+#buttonContainer {
+	position: fixed;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row; /* Stack buttons horizontally */
+	align-items: center;
+	gap: 20px;
+	z-index: 1000;
+}
+
+button {
+	background-color: white;
+	color: black;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 15px;
+	width: 150px;
+	text-align: center;
+}
